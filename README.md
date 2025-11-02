@@ -9,26 +9,17 @@ O objetivo do projeto é criar uma estrutura **modular, limpa e reutilizável**,
 - Calcular médias de desempenho e métricas agregadas por temporada e liga;
 - Visualizar comparativos entre temporadas ou ligas com base em indicadores estatísticos.
 
-Essa estrutura foi projetada para **funcionar tanto em notebooks (Jupyter/Colab)**.
+Essa estrutura foi projetada para **funcionar em notebooks (Jupyter/Colab)**.
 
 ---
 
 ## Estrutura do Projeto
 
 ```
-projeto_duplo_comparador/
-│
+
 ├── notebook_version/                # Versão voltada para Jupyter/Colab
-│   ├── comparador_fbref_tm/
-│   │   ├── coleta_dados.py          # Scraping e leitura de dados
-│   │   ├── processamento.py         # Limpeza, normalização e merge
-│   │   ├── analise.py               # Cálculos e estatísticas
-│   │   ├── visualizacao.py          # Geração de gráficos e tabelas
-│   │   └── utils.py                 # Funções auxiliares
-│   ├── notebooks/exemplo_uso.ipynb  # Exemplo funcional com IPython.display
-│   ├── main.py                      # Script executável
-│   └── requirements.txt
-│
+| ├── Comparador_FBref_TM_com_media_liga.ipynb
+
 ├── terminal_version/                # Versão para execução em terminal (Futuro)
 │   ├── comparador_fbref_tm/         # Mesmo código, com fallbacks para IPython
 │   ├── main.py
@@ -74,6 +65,3 @@ projeto_duplo_comparador/
 | Visualização | `matplotlib`, `seaborn`, `plotly` |
 | Ambiente Notebook | `IPython`, `Jupyter` |
 | Organização | Estrutura TAD modular + README + venv + notebook |
-
-
-
